@@ -31,6 +31,8 @@ The endpoint accepts `POST` HTTP requests with the following payload format:
 }
 ```
 
+Add the query parameter `?welcome_email=true` to email newly added recipients using the specified Sendgrid template ID.
+
 You can test your API using `curl`: 
 
 ``curl -H "Content-Type: application/json" -X POST -d '{"email": "test@email.com", "first_name":"Peter Parker"}' <generated webtask url>``
